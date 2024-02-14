@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>For Sunshine</title>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script> -->
+	<link rel="stylesheet" href="../static/css/font.css">
+	<link rel="stylesheet" href="../static/css/style.min.css">
+
+</head>
+<body>
+    <nav>
+        <div class="logo">
+        </div>
+        <!--Navigation-->
+        <ul class="menu">
+          <li><a href="index.html">Compliments</a></li>
+          <li><a href="card.html">Valentine card</a></li>
+        </ul>
+    </nav>
+
+    <section class="promo" id="first_section">
+        <div class="container">
+            <div class="promo__wrapper">
+				<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+					<source src="../static/video/edit.webm" type="video/webm">
+				</video>
+                <div class="promo__terminal_wrapper">
+					<div class="terminal">
+						<div class="window-title">
+							<div class="win-buttons">
+								<a id="close" class="button" href="#"></a>
+								<a id="min" class="button" href="#"></a>
+								<a id="max" class="button" href="#"></a>
+							</div>
+							<span class="title">CLion</span>
+						</div>
+						<div class="message">
+							<span class="caret">>$</span>&nbsp;<span class="typed" id="typed_id"></span>
+							<form>><span class="caret">$</span>&nbsp;<input type="text" id="input-terminal" name="response"/></form>
+						</div>
+						<div class="send_wrapper">
+							<button id="send" onClick="stopLoop()">
+								<img class="button_gif" src="../static/video/cat2.webp" type="image/webp"></img>
+							</button>
+						</div>
+					</div>
+                </div>
+            </div>
+        </div>
+    </section>
+	<script type="text/javascript" src="../static/js/home.js"></script>
+
+</body>
+</html>

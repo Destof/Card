@@ -1,0 +1,43 @@
+
+
+* {
+  font-family: 'Museo Sans Cyrl', sans-serif;
+}
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+}
+nav {
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    // backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0px;
+    z-index: 1;
+    ul {
+        display: flex;
+    }
+    ul li a {
+        height: 40px;
+        line-height: 43px;
+        margin: 20px;
+        padding: 0px 30px;
+        display: flex;
+        font-size: 1rem;
+        font-weight: 600;
+        color: #e0ffff;
+        transition: 0.1s;
+    }
+    ul li a:hover {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 3px;
+        color: #fff;
+    }
+  }
+@import 'blocks/home';
+@import 'blocks/card';
