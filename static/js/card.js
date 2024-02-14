@@ -8,5 +8,5 @@ function hide() {
     var image = document.querySelector('#image');
     image.src = "static/video/cat4.webp";
     var text = document.querySelector('#text');
-    text.innerHTML = "Text"
+    text.innerHTML = "Ты - особенный человек в моей жизни"
   }
