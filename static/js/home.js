@@ -9,8 +9,8 @@ let strings = [
       std::istream_iterator<int>(str),\
       std::istream_iterator<int>()\
   );",
-  "template<typenamevalue_t,typenameind_t,typenamesteps_t>voidSolver<value_t,ind_t,steps_t>::CalcPMLParam(){std::vector<std::string>tmp={"x","y","z"};for(ind_ti=0;i<_pml_crd.size();i++){_pml_ind.push_back(std::make_pair((_pml_crd[i].first-this->_lborders[tmp[i]])/this->_h[tmp[i]],(_pml_crd[i].second-this->_lborders[tmp[i]])/this->_h[tmp[i]]));//PMLSECONDstd::vector<ind_t>buf(static_cast<ind_t>(_skin_crd[i].size()+3));buf[0]=_pml_ind[i].first+1;buf[buf.size()-2]=_pml_ind[i].second+1;buf[buf.size()-1]=(this->_rborders[tmp[i]]-this->_lborders[tmp[i]])/this->_h[tmp[i]];for(ind_tj=1;j<buf.size()-2;j++){buf[j]=(_skin_crd[i][j-1]-this->_lborders[tmp[i]])/this->_h[tmp[i]];}_layers_ind.push_back(buf);buf.clear();_pml_width.push_back(_pml_crd[i].first-this->_lborders[tmp[i]]);}};",
-  ""
+  "template<typenamevalue_t,typenameind_t,typenamesteps_t>voidSolver<value_t,ind_t,steps_t>::CalcPMLParam(){std::vector<std::string>tmp={\"x\",\"y\",\"z\"};for(ind_ti=0;i<_pml_crd.size();i++){_pml_ind.push_back(std::make_pair((_pml_crd[i].first-this->_lborders[tmp[i]])/this->_h[tmp[i]],(_pml_crd[i].second-this->_lborders[tmp[i]])/this->_h[tmp[i]]));//PMLSECONDstd::vector<ind_t>buf(static_cast<ind_t>(_skin_crd[i].size()+3));buf[0]=_pml_ind[i].first+1;buf[buf.size()-2]=_pml_ind[i].second+1;buf[buf.size()-1]=(this->_rborders[tmp[i]]-this->_lborders[tmp[i]])/this->_h[tmp[i]];for(ind_tj=1;j<buf.size()-2;j++){buf[j]=(_skin_crd[i][j-1]-this->_lborders[tmp[i]])/this->_h[tmp[i]];}_layers_ind.push_back(buf);buf.clear();_pml_width.push_back(_pml_crd[i].first-this->_lborders[tmp[i]]);}};",
+  "return std::shared_ptr<Logger>(std::shared_ptr<void>{},&GetNullLogger()>);"
   ];
 //let stopStrings = ["fact1!", "fact2!!"];
 let stopStrings = [
